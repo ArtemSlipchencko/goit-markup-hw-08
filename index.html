@@ -14,10 +14,21 @@
   <body>
     <header class="header">
       <div class="container container-header">
-       <nav class="nav">
-        <a href="./index.html">
+        <a href="./index.html" class="link-logo">
           <img src="./images/logotype.svg" alt="Логотип студии" class="logo"/>
          </a>
+         <button type="button" class="menu-button" data-menu-button>
+           <svg width="19" height="19" class="menu-button-svg ">
+             <use class="open-menu-icon" href="./images/sprite.svg#icon-menu">
+
+             </use>
+             <use class="close-menu-icon" href="./images/sprite.svg#icon-close">
+
+             </use>
+           </svg>
+         </button>
+         <div class="menu" data-menu>
+       <nav class="nav">
         <ul class="navigation">
           <li class="navigation-item"><a href="./index.html" class="links-nav current">Студия</a></li>
           <li class="navigation-item"><a href="./portfolio.html" class="links-nav">Портфолио</a></li>
@@ -42,6 +53,7 @@
           </a>
         </li>
        </ul>
+       </div>
       </div>
     </header>
   
@@ -55,7 +67,7 @@
         <button type="button" class="btn" data-modal-open>Заказать услугу</button>
       </div>
       </section>
-      <section class="qualities">
+       <section class="qualities">
         <div class="container qualities-container">
         <h2 class="visually-hidden">
           Качества
@@ -409,7 +421,7 @@
       </div>
     </div>
       </section>
-    </footer>
+    </footer> -->
 
     <div class="modal-back is-hidden" data-modal>
       <div class="modal-window">
@@ -468,6 +480,7 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
   </body>
 </html>

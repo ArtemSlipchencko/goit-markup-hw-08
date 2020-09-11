@@ -66,12 +66,13 @@
   .modal-close:hover,
   .modal-close:focus {
     border-radius: 50%;
-    background-color: var(--additional-text-color);
-    color: var(--accent-color);
+    background-color: $additional-text-color;
+    color: $accent-color;
     outline: none;
   }
 
   .modal-form-title {
+    text-align: center;
     margin: 0px;
     margin-bottom: 12px;
     font-style: normal;
@@ -197,4 +198,66 @@
 
   .form-icon {
     fill: currentColor;
+  }
+
+  @media screen and (min-width:480px) and (max-width:767px) {
+
+    .modal-window {
+      width: 450px;
+      height: 609px;
+      padding: 40px 40px;
+      background-color: #fff;
+      position: absolute;
+      left: 50%;
+      top: 6%;
+      border-radius: 4px;
+      
+      transition: 500ms linear;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+  
+  .modal-close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      color: #000;
+      background-color: #fff;
+    }
+
+    .modal-back {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: fixed;
+      left: 0;
+      top: 0;
+      transition: 500ms linear;
+  
+      &> .modal-window {
+          transform: scale(1); transform: translate(-50%, 0%);
+          transition: transform 250ms linear;
+        }
+  
+      &.is-hidden > .modal-window {
+          transform: scale(0);
+          transition: transform 250ms linear; 
+        }
+    }
+
+    .modal-form-label-check {
+      font-size: 12px;
+      line-height: 1.71;
+      color: #757575;
+      letter-spacing: 0.03em;
+    }
+
   }

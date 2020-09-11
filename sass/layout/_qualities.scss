@@ -89,3 +89,56 @@
       line-height: 1.7;
       letter-spacing: 0.03em;
     }
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+
+      .qualities-boxes {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .details::before {
+        content: "";
+        display: block;
+        height: 120px;
+        margin-bottom: 30px;
+        background-image: url(../images/antenna.svg);
+        background-color: #f5f4fa;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .punctuality::before {
+        content: "";
+        display: block;
+        height: 120px;
+        margin-bottom: 30px;
+        background-image: url(../images/clock.svg);
+        background-color: #f5f4fa;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .planning::before {
+        content: "";
+        display: block;
+        height: 120px;
+        margin-bottom: 30px;
+        background-image: url(../images/diagram.svg);
+        background-color: #f5f4fa;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+      .technology::before {
+        content: "";
+        display: block;
+        height: 120px;
+        margin-bottom: 30px;
+        background-image: url(../images/astronaut.svg);
+        background-color: #f5f4fa;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+    }

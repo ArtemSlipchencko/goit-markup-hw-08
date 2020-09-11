@@ -2,7 +2,7 @@ h1 {
     margin: 0px 0px;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 26px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.06em;
@@ -11,7 +11,7 @@ h1 {
   }
 
 .hero {
-    height: 600px;
+    height: 400px;
     display: flex;
     align-items: center;
     background-color: #2f303a;
@@ -23,7 +23,7 @@ h1 {
   }
 
   .hero-box {
-    max-width: 696px;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -45,4 +45,17 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+  }
+
+  @media screen and (min-width: 480px) and (max-width:767px) {
+
+    .hero-box {
+      text-align: center;
+      padding: 0 60px;
+    }
+
+    .hero {
+      background-image: linear-gradient(#2F303A66, #2F303A66), url(../images/mobile-back.jpg);
+    }
+
   }
