@@ -1,0 +1,48 @@
+h1 {
+    margin: 0px 0px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+.hero {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: #2f303a;
+    background-image: linear-gradient(#2F303A66, #2F303A66),
+    url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right top;
+  }
+
+  .hero-box {
+    max-width: 696px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $additional-text-color;
+    background-color: $accent-color;
+    margin-top: 30px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.9;
+    border-radius: 4px;
+    padding: 10px 32px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }

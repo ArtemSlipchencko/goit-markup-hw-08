@@ -1,0 +1,115 @@
+.logo {
+    margin-right: 93px;
+  }
+  
+  .nav {
+    display: flex;
+    margin-right: auto;
+  }
+  
+  .navigation {
+    margin: 0;
+    width: 313px;
+    padding: 0px;
+    display: flex;
+    
+  }
+  
+  .navigation-item:not(:first-child) {
+    margin-left: 50px;
+  }
+  
+  .container-header {
+      display: flex;
+      align-items: center;  
+    }
+  
+    header::after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: #ECECEC;
+      border-radius: 2px;
+    }
+  
+    .links-nav {
+      padding: 24px 0;
+      color: $secondary-text-color;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+    }
+    }
+    
+    .links-contact {
+      display: flex;
+      align-items: center;
+
+      &:hover .contact-icon, 
+      &:focus .contact-icon {
+      fill: $accent-color;
+  }
+    }
+  
+    .contact-icon {
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+      fill: #757575;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+    }
+    }
+
+    .links-contact {
+      padding: 24px 0;
+      color: $main-text-color;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+  }
+    }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contacts-item:not(:first-child) {
+    margin-left: 50px;
+  }
+  
+  .current {
+    color: $accent-color;
+    position: relative;
+  }
+  
+  .current::after {
+    content: "";
+    display: block;
+    height: 4px;
+    background: $accent-color;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+  }

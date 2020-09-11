@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+
+  p {
+    color: $main-text-color;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  .visually-hidden {
+    margin: 0;
+    position: absolute !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+
+  body {
+    color: $secondary-text-color;
+    font-family: roboto, sans-serif;
+    margin: 0px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  h2 {
+    color: $secondary-text-color;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  }
+
+  .container {
+    padding: 0 15px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }

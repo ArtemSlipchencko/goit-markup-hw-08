@@ -1,0 +1,141 @@
+.footer-right-title {
+    font-family: roboto, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $additional-text-color; 
+  }
+  
+  .footer-contacts {
+    margin: 0;
+    padding: 0;
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .footer {
+      padding: 60px 0;
+      background-color: #2f303a;
+      width: 100%;
+    }
+    
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+  
+    .footer-container {
+      display: flex;
+      align-items: start;
+    }
+  
+    .footer-contact {
+      color: #ffffff;
+    }
+  
+    .contacts {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 1.7;
+      letter-spacing: 0.03em;
+    }
+    
+    .contact {
+      color: $main-text-color;
+    }
+  
+    .social-links-footer {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .social-link-footer {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: $additional-text-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .social-links-item-footer:not(:last-child) {
+      margin-right: 10px;   
+    }
+  
+    .social-link-footer:hover,
+    .social-link-footer:focus {
+      color: $additional-text-color;
+      background-color: $accent-color;
+    }
+  
+    .social-link-icon-footer {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+  
+    .footer-right {
+      margin-left: 70px;
+    }
+  
+    .footer-form-box {
+      margin-left: 70px;
+    }
+  
+    .footer-form-title {
+      margin-bottom: 20px;
+      margin-top: 0px;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      color: $additional-text-color;
+    }
+  
+    .plane {
+      fill: currentColor;
+     }
+  
+    .footer-form-button {
+      cursor: pointer;
+      width: 200px;
+      height: 50px;
+      background-color: $accent-color;
+      color: $additional-text-color;
+      transition: color 250ms linear;
+      transition: background-color 250ms linear;
+      display: inline-flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 29px;
+      margin-left: 12px;
+      border-radius: 4px;
+
+      &:hover,
+      &:focus {
+        background-color: $additional-text-color;
+        color: $accent-color;
+        fill: $accent-color;
+    }
+    }
+  
+    .footer-form-input {
+      width: 358px;
+      height: 50px;
+      padding-left: 16px;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 4px;
+      color: $additional-text-color;
+    }
