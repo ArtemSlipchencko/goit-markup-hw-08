@@ -2,10 +2,11 @@
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
   }
   
   .qualities-box {
-    max-width: 270px;
+    width: 270px;
   }
   
   .details::before {
@@ -92,18 +93,23 @@
 
     @media screen and (min-width: 480px) and (max-width:767px) {
 
+      .qualities .container {
+        padding: 0;
+      }
+
       .qualities {
-        padding: 60px 0;
+        padding: 60px 15px;
 
         .qualities-box {
           margin: 0;
-          max-width: 450px;
+          width: 450px;
         }
       }
 
       .qualities-boxes {
         display: flex;
         flex-direction: column;
+        justify-content: center;
       }
 
       .details::before {
@@ -148,6 +154,36 @@
         background-color: #f5f4fa;
         background-position: center;
         background-repeat: no-repeat;
+      }
+
+    }
+
+    @media screen and (min-width:768px) and (max-width:1200px) {
+
+      .qualities {
+        padding: 60px 15px;
+      }
+
+      .qualities-container {
+        padding: 0;
+      }
+
+      .qualities-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+
+        .qualities-box {
+          width: 354px;
+        }
+      }
+
+      .qualities-box:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+
+      .qualities-box:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
       }
 
     }

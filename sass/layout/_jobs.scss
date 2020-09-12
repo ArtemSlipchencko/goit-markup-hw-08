@@ -7,6 +7,7 @@
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
   }
   
   .jobs {
@@ -19,7 +20,7 @@
       overflow: hidden;
 
       &:not(:nth-child(3n)) {
-        margin-right: auto;
+        margin-right: 30px;
       }
     }
   
@@ -57,6 +58,14 @@
 
     @media screen and (min-width: 480px) and (max-width:767px) {
 
+      .jobs {
+        display: none;
+      }
+
+    }
+
+    @media screen and (min-width:768px) and (max-width:1200px) {
+    
       .jobs {
         display: none;
       }

@@ -1,7 +1,8 @@
 @media screen and (min-width: 480px) and (max-width:767px) {
 
   .container-header {
-    padding: 10px 15px;
+    padding: 16px 15px;
+    margin: 0 auto;
   }
 
   .menu {
@@ -201,7 +202,7 @@ position: relative;
 @media screen and (min-width:768px) and (max-width:1200px) {
 
   .container-header {
-    padding: 0 15px;
+    padding: 25px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -315,7 +316,7 @@ position: relative;
     background: $accent-color;
     width: 100%;
     position: absolute;
-    top: 60px;
+    top: 73px;
   }
 
 }
