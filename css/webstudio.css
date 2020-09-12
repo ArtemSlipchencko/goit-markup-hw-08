@@ -84,7 +84,7 @@ h4 {
     position: absolute;
     top: 61px;
     left: 0;
-    width: 100%;
+    width: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -580,6 +580,46 @@ h4 {
   color: #ffffff;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .footer-container .footer-left .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container .footer-right {
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+  .footer-container .footer-right .footer-right-title {
+    text-align: center;
+  }
+  .footer-container .footer-form-box {
+    margin-left: 0;
+  }
+  .footer-container .footer-form-box .footer-form-title {
+    text-align: center;
+  }
+  .footer-container .footer-form-box .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container .footer-form-box .footer-form .footer-form-input {
+    margin-bottom: 20px;
+  }
+}
+
 h1 {
   margin: 0px 0px;
   font-style: normal;
@@ -730,6 +770,13 @@ h1 {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .qualities {
+    padding: 60px 0;
+  }
+  .qualities .qualities-box {
+    margin: 0;
+    max-width: 450px;
+  }
   .qualities-boxes {
     display: flex;
     flex-direction: column;
@@ -931,6 +978,22 @@ h1 {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team-boxes {
+    flex-direction: column;
+  }
+  .team-boxes .team-box {
+    min-width: 450px;
+  }
+  .team-boxes .team-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .team-boxes .team-box .dev-photo {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
 .clients {
   padding: 94px 0;
 }
@@ -973,6 +1036,28 @@ h1 {
 
 .client-link-icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients {
+    padding: 60px 0;
+  }
+  .clients-box {
+    flex-wrap: wrap;
+    padding: 0;
+    width: 450px;
+    justify-content: start;
+  }
+  .clients-box .client-link {
+    width: 210px;
+    height: 90px;
+  }
+  .clients-item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .clients-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
 }
 
 .filter-btns {

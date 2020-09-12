@@ -139,3 +139,57 @@
       border-radius: 4px;
       color: $additional-text-color;
     }
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .footer-left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 60px;
+
+          .footer-contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+
+        .footer-right {
+          margin-bottom: 60px;
+          margin-left: 0;
+
+          .footer-right-title {
+            text-align: center;
+          }
+        }
+
+        .footer-form-box {
+          margin-left: 0;
+
+          .footer-form-title {
+            text-align: center;
+          }
+
+          .footer-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .footer-form-input {
+              margin-bottom: 20px;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+    

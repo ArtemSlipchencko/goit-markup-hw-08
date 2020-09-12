@@ -92,3 +92,25 @@
     .social-links-item:not(:first-child) {
       margin-left: 10px;
     }
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+      
+      .team-boxes {
+        flex-direction: column;
+
+        .team-box {
+          min-width: 450px;
+
+          &:not(:last-child) {
+            margin-bottom: 60px;
+          }
+
+          .dev-photo {
+            width: 450px;
+            margin: 0 auto;
+          }
+          
+        }
+      }
+
+    }

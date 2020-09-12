@@ -42,3 +42,31 @@
   .client-link-icon {
     fill: currentColor;
   }
+
+  @media screen and (min-width: 480px) and (max-width:767px) {
+
+    .clients {
+      padding: 60px 0;
+    }
+
+    .clients-box {
+      flex-wrap: wrap;
+      padding: 0;
+      width: 450px;
+      justify-content: start;
+
+      .client-link {
+        width: 210px;
+        height: 90px;
+      }
+    }
+
+    .clients-item:nth-child(2n) {
+      margin-left: 30px;
+    }
+
+    .clients-item:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+
+  }
