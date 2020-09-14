@@ -173,6 +173,8 @@ h4 {
   }
   .close-menu-icon {
     display: none;
+    width: 24px;
+    height: 16px;
   }
   .menu-button.is-open .open-menu-icon {
     display: none;
@@ -687,7 +689,7 @@ h1 {
 }
 
 .hero {
-  height: 400px;
+  height: 600px;
   display: flex;
   align-items: center;
   background-color: #2f303a;
@@ -745,6 +747,7 @@ h1 {
     padding: 0 60px;
   }
   .hero {
+    height: 400px;
     background-image: linear-gradient(#2F303A66, #2F303A66), url(../images/back@1x.jpg);
     background-size: cover;
   }
@@ -765,6 +768,7 @@ h1 {
 
 @media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
+    height: 400px;
     background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/webstudio-tablet/back@2x.jpg);
   }
 }
@@ -1503,10 +1507,11 @@ button:focus {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   transition: 500ms linear;
+  overflow: scroll;
 }
 
 .modal-back > .modal-window {
@@ -1544,6 +1549,7 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .modal-close {
@@ -1699,6 +1705,10 @@ label {
   fill: currentColor;
 }
 
+.modal-form-box {
+  margin-top: 4px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .modal-window {
     width: 100%;
@@ -1709,6 +1719,7 @@ label {
     left: 50%;
     top: 6%;
     border-radius: 4px;
+    overflow: scroll;
     transition: 500ms linear;
     display: flex;
     justify-content: space-between;
@@ -1732,7 +1743,7 @@ label {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     transition: 500ms linear;
@@ -1767,13 +1778,15 @@ label {
     transition: transform 250ms linear;
   }
   .modal-back {
-    width: 768px;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    position: fixed;
+    position: absolute;
+    overflow: scroll;
     left: 0;
     top: 0;
     transition: 500ms linear;
+    overflow: scroll;
   }
 }
 /*# sourceMappingURL=webstudio.css.map */
