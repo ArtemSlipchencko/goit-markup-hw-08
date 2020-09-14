@@ -16,10 +16,19 @@ h1 {
     align-items: center;
     background-color: #2f303a;
     background-image: linear-gradient(#2F303A66, #2F303A66),
-    url(../images/hero.jpg);
+    url(../images/back@1x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right top;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+
+    .hero {
+      background-image: linear-gradient(#2f303a66, #2f303a66) url(../images/back@2x.jpg);
+    }
   }
 
   .hero-box {
@@ -47,7 +56,7 @@ h1 {
     cursor: pointer;
   }
 
-  @media screen and (min-width: 480px) and (max-width:767px) {
+  @media screen and (min-width: 320px) and (max-width:767px) {
 
     h1 {
       margin: 0px 0px;
@@ -67,12 +76,36 @@ h1 {
     }
 
     .hero {
-      background-image: linear-gradient(#2F303A66, #2F303A66), url(../images/mobile-back.jpg);
+      background-image: linear-gradient(#2F303A66, #2F303A66), url(../images/back@1x.jpg);
+      background-size: cover;
     }
+
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+
+    .hero {
+      background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/back@2x.jpg);
+    }
+  }
 
   }
 
   @media screen and (min-width:768px) and (max-width:1200px) {
+
+    .hero {
+      background-image: linear-gradient(#2F303A66, #2F303A66), url(../images/webstudio-tablet/back@1x.jpg);
+      background-size: cover;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+
+    .hero {
+      background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/webstudio-tablet/back@2x.jpg);
+    }
+  }
 
     h1 {
       margin: 0px 0px;
@@ -89,5 +122,23 @@ h1 {
     .hero-box {
       width: 360px;
     }
+
+  }
+
+  @media screen and (min-width: 1200px) {
+
+    .hero {
+      background-image: linear-gradient(#2F303A66, #2F303A66), url(../images/webstudio-desktop/back@1x.jpg);
+      background-size: cover;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+
+    .hero {
+      background-image: linear-gradient(#2f303a66, #2f303a66), url(../images/webstudio-desktop/back@2x.jpg);
+    }
+  }
 
   }

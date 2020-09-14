@@ -28,6 +28,7 @@
   .team {
       padding: 94px 0px;
       background-color: #F5F4FA;
+      background-size: cover;
     }
   
     .dev {
@@ -93,24 +94,35 @@
       margin-left: 10px;
     }
 
-    @media screen and (min-width: 480px) and (max-width:767px) {
+    @media screen and (min-width: 320px) and (max-width:767px) {
       
+      .team {
+        padding: 60px 0;;
+      }
+
       .team .container {
         padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
       .team-boxes {
         flex-direction: column;
 
         .team-box {
-          min-width: 450px;
+          max-width: 450px;
+          margin-right: 0;
+
+          .dev-photo {
+            width: 100%;
+          }
 
           &:not(:last-child) {
             margin-bottom: 60px;
           }
 
           .dev-photo {
-            width: 450px;
             margin: 0 auto;
           }
           
@@ -123,7 +135,7 @@
     
       .team-boxes {
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center;
 
         .team-box {
           width: 354px;
